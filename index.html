@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-dark">
+    <div class="d-flex justify-content-center p-5">
+        <div class="bg-white p-5">
+            <h3>Personalised Greeting App</h3>
+            <label for="username">Enter your name</label>
+            <input type="text" id="username" name="username" autocomplete="given-name" >
+            <input type="submit" value="submit" class="btn btn-success" id="addToStorge" onclick="outPutUserInput()">
+            <input type="submit" value="Clear Storage" class="btn btn-success" onclick="clearStorage()">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
