@@ -1,17 +1,22 @@
 const userInput = document.getElementById("username");
-const userOutput = document.getElementById("addToStorage");
+const greetingDemo = document.getElementById("demo");
 
     function showPersonalizedMessage(){
         const user = localStorage.getItem('user')
         if(user == null){
-            alert("welcome to Kodek! Please enter your name")
+            greetingDemo.innerHTML +=
+            `Welcome to <span style="color: #0268AF; font-weight: bolder; font-size: px;">RoboRevolution!</span><br>
+            <span style="font-weight: lighter; font-size: 16px;">The website for everyone interested
+            in the latest advancment in artificial intelligence</span>`;
         }else {
-            alert(`Hello ${user}👋.It's good to have you back!`)
+            greetingDemo.innerHTML =
+            `<span style="color: #0268AF; font-weight: bolder; font-size: 25px;">Hello ${user}👋</span><br>
+            <span style="font-weight: lighter; font-size: 30px;">It's good to have you back!</span>`;
         }
     }
     showPersonalizedMessage()
 
-    function outPutUserInput(){
+    function addToStorage(){
         localStorage.setItem('user', userInput.value);
     }
 
