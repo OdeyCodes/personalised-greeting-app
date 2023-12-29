@@ -11,7 +11,7 @@ const greetingDemo = document.getElementById("demo");
         }else {
             greetingDemo.innerHTML =
             `<span style="color: #0268AF; font-weight: bolder; font-size: 25px;">Hello ${user}👋</span><br>
-            <span style="font-weight: lighter; font-size: 30px;">It's good to have you back!</span>`;
+            <span style="font-weight: lighter; font-size: 30px;">You have successfully reserved a spot. See you soon!</span>`;
         }
     }
     showPersonalizedMessage()
