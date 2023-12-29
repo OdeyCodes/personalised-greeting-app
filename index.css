@@ -15,7 +15,7 @@ width: 40%;
 
 .right{
 background-color: white;
-border-radius: 5% 5% 5% 5%;
+border-radius: 5% 0 0 5%;
 width: 60%;
 padding: 150px;
 }
